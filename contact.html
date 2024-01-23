@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Vedaant Patel
+EMAIL: vedaantp@uci.edu
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Your name here">
+    <meta name="description" content="description of your page">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="images/SynqdLogo.png" type="image/x-icon">
+    <title>Synq'd - Contact</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <h1 class="navbar-brand">Synq'd</h1>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style=" height: 90vh; align-items: center;">
+        <h1 style="color: white;">Contact Us</h1>
+        <p style="color: white;">Please contact us for ideas you'd like to see!</p>
+        <form id="contact-form"
+            style="display: flex; flex-direction: column; align-items: center; padding-top: 0%; height: 100%; width: 100%;">
+            <input style="display: flex; width: 25%; margin-bottom: 1%;" type="text" id="name" name="from_name"
+                placeholder="Name">
+
+            <input style="display: flex; width: 25%; margin-bottom: 1%;" type="email" id="email" name="from_email"
+                placeholder="Email" required>
+            
+            <textarea style="display: flex; width: 50%; margin-bottom: 1%;" id="message" name="message" rows="4"
+                placeholder="Message" required></textarea>
+
+            <button
+                style="display: flex; justify-content: center; align-items: center; width: 10%; border-radius: 10px;"
+                type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/contactScript.js"></script>
+</body>
+
+</html>
